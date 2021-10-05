@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorYellow">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizonGuideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.20" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizonGuideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.80" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/verticalGuideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/verticalGuideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailfield"
+            style="@style/MaterialTheme"
+            android:layout_width="238dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="70dp"
+            app:layout_constraintLeft_toLeftOf="@id/verticalGuideline1"
+            app:layout_constraintRight_toRightOf="@id/verticalGuideline2"
+            app:layout_constraintTop_toTopOf="@id/horizonGuideline1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="7dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordfield"
+            style="@style/MaterialTheme"
+            android:layout_width="238dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="35dp"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintLeft_toLeftOf="@id/verticalGuideline1"
+            app:layout_constraintRight_toRightOf="@id/verticalGuideline2"
+            app:layout_constraintTop_toBottomOf="@id/emailfield"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="7dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/signinbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="145dp"
+            android:background="@drawable/login_background_button"
+            android:text="Let's Go"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/verticalGuideline1"
+            app:layout_constraintRight_toRightOf="@id/verticalGuideline2"
+            app:layout_constraintTop_toBottomOf="@id/passwordfield" />
+
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="One Note"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toTopOf="@id/border"
+            app:layout_constraintLeft_toLeftOf="@id/verticalGuideline1"
+            app:layout_constraintRight_toRightOf="@id/verticalGuideline2" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="24sp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            app:layout_constraintRight_toRightOf="@id/verticalGuideline2"
+            app:layout_constraintLeft_toLeftOf="@id/verticalGuideline1"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Or"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="@id/verticalGuideline1"
+            app:layout_constraintRight_toRightOf="@id/verticalGuideline2"
+            app:layout_constraintTop_toBottomOf="@id/signinbutton" />
+
+        <Button
+            android:id="@+id/signingooglebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:paddingLeft="12dp"
+            android:text="  Sign in with Google"
+            android:background="@color/colorLoginButton"
+            app:layout_constraintLeft_toLeftOf="@id/verticalGuideline1"
+            app:layout_constraintRight_toRightOf="@id/verticalGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/or" />
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?  Click here"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/signingooglebutton"
+            android:layout_marginTop="40sp"
+            app:layout_constraintLeft_toLeftOf="@id/border"
+            app:layout_constraintRight_toRightOf="@id/border"
+            app:layout_constraintBottom_toBottomOf="@id/border"
+            android:layout_marginBottom="40dp"/>
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="262dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="35dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintLeft_toLeftOf="@id/verticalGuideline1"
+            app:layout_constraintRight_toRightOf="@id/verticalGuideline2"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="2dp"
+            android:layout_height="130dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintLeft_toRightOf="@id/verticalGuideline1"
+            app:layout_constraintTop_toTopOf="@id/border"
+            android:layout_marginTop="119dp"
+            />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="2dp"
+            android:layout_height="130dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintRight_toLeftOf="@id/verticalGuideline2"
+            app:layout_constraintTop_toTopOf="@id/border"
+            android:layout_marginTop="119dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="180dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/pleaseWait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please wait...."
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="120dp"/>
+
+    </eightbitlab.com.blurview.BlurView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_1_1"
+    android:background="@drawable/dialogbox_main_back"
+    android:layout_width="match_parent"
+    android:layout_height="270dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/dialog_1_2"
+        android:layout_margin="40dp"
+        android:background="@drawable/dialog_background"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_success_header"
+            android:fontFamily="@font/aldrich"
+            android:foregroundTint="@color/colorWhite"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="Add New Note"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/note"
+            app:layout_constraintBottom_toBottomOf="@id/header"/>
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="290dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="107dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="137dp"
+        android:background="@drawable/dialog_error_button"
+        android:fontFamily="@font/aldrich"
+        android:padding="14dp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/dialog_1_1"
+        app:layout_constraintLeft_toLeftOf="@id/dialog_1_2"
+        app:layout_constraintTop_toTopOf="@id/dialog_1_2"
+        app:layout_constraintVertical_bias="0.565" />
+
+    <Button
+        android:id="@+id/ok2"
+        android:layout_width="107dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="137dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/dialog_success_button"
+        android:fontFamily="@font/aldrich"
+        android:padding="14dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/dialog_1_1"
+        app:layout_constraintRight_toRightOf="@id/dialog_1_2"
+        app:layout_constraintTop_toTopOf="@id/dialog_1_2"
+        app:layout_constraintVertical_bias="0.565" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

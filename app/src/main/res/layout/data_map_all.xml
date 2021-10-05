@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="23dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/trash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/data_icon"
+        android:layout_width="43dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/data_for_note"
+        android:layout_width="232dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/data_rem_detail"
+        android:layout_width="232dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="78dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/data_from"
+        android:layout_width="93dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Data_to"
+        android:layout_width="95dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/data_for_note"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/data_date"
+        android:layout_width="106dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/data_title" />
+
+    <TextView
+        android:id="@+id/data_alarm"
+        android:layout_width="74dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/data_for_note"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/data_title"
+        android:layout_width="62dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

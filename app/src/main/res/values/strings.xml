@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">One Note</string>
+    <string name="email">      Email</string>
+    <string name="pass">      Password</string>
+    <string name="navTi">Help &amp; Support</string>
+
+    <string name="navStart">Start navigation</string>
+    <string name="navEnd">Stop navigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

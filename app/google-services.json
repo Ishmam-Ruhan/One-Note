@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "657056446566",
+    "firebase_url": "https://one-step-32ce9.firebaseio.com",
+    "project_id": "one-step-32ce9",
+    "storage_bucket": "one-step-32ce9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657056446566:android:faad2c5f70871753b855a7",
+        "android_client_info": {
+          "package_name": "com.example.exam11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657056446566-l0l2nvca4agmqqaogoqqfig3tdkfrpr9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.exam11",
+            "certificate_hash": "6dc49474e2d3ef077a689c4670299a18214755f1"
+          }
+        },
+        {
+          "client_id": "657056446566-v5o0s6jo1s5hvpmvk99p3g2n7h3nsnrd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2_vVSSno18oBGJ8cNJqt5exutbW1yx10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657056446566-v5o0s6jo1s5hvpmvk99p3g2n7h3nsnrd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

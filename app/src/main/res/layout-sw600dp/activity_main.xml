@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorYellow">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizonGuideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.20" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizonGuideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.80" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/verticalGuideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/verticalGuideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailfield"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="238dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="70dp"
+            app:layout_constraintLeft_toLeftOf="@id/verticalGuideline1"
+            app:layout_constraintRight_toRightOf="@id/verticalGuideline2"
+            app:layout_constraintTop_toTopOf="@id/horizonGuideline1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="7dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordfield"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="238dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintLeft_toLeftOf="@id/verticalGuideline1"
+            app:layout_constraintRight_toRightOf="@id/verticalGuideline2"
+            app:layout_constraintTop_toBottomOf="@id/emailfield"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="@string/pass"
+                android:inputType="textPassword"
+                android:paddingLeft="7dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="137dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="150dp"
+            android:background="@drawable/login_background_button"
+            android:text="Sign In"
+            app:layout_constraintLeft_toLeftOf="@id/verticalGuideline1"
+            app:layout_constraintRight_toRightOf="@id/verticalGuideline2"
+            app:layout_constraintTop_toBottomOf="@id/passwordfield" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_optn_Profile"
+            android:icon="@drawable/ic_action_person"
+            android:title="Profile" />
+    </group>-->
+
+    <item android:title="Go TO">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_optn_notes"
+                    android:icon="@drawable/note"
+                    android:title="Notes" />
+
+                <item
+                    android:id="@+id/nav_optn_alarms"
+                    android:icon="@drawable/alarm"
+                    android:title="Alarms" />
+
+                <item
+                    android:id="@+id/nav_optn_remind"
+                    android:icon="@drawable/reminder"
+                    android:title="Reminders" />
+
+                <item
+                    android:id="@+id/nav_optn_tasks"
+                    android:icon="@drawable/task"
+                    android:title="Tasks" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Community">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_optn_Facebook"
+                    android:icon="@drawable/ic_facebook_circular_logo"
+                    android:title="Facebook" />
+
+                <item
+                    android:id="@+id/nav_optn_Whatsapp"
+                    android:icon="@drawable/ic_whatsapp"
+                    android:title="WhatsApp" />
+
+                <item
+                    android:id="@+id/nav_optn_Telegram"
+                    android:icon="@drawable/ic_telegram"
+                    android:title="Telegram" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/nav_optn_Help"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="@string/navTi">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_optn_Logout"
+                    android:icon="@drawable/ic_action_logout"
+                    android:title="Sign Out" />
+            </group>
+        </menu>
+
+    </item>
+
+
+</menu>
